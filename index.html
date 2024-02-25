@@ -1,0 +1,22 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="refresh" content="0; URL='mio://web.vip.miui.com/page/info/mio/mio/checkIn'" />
+    </head>
+    <body>
+        <h1>起来打卡！</h1>
+        <p>本页面通过调用"小米社区"APP的合法功能，打开"小米社区"APP的签到页面。本页面不能帮您实现自动签到、一键签到等操作。</p>
+        <p>如果打开本页面没有反应，请确保您安装了"小米社区"APP，并且允许浏览器的"关联唤醒/启动其它应用"等权限。</p>
+        <button id="open_again">手动跳转</button>
+    </body>
+    <script>
+        function openMiCheckin(){
+            let url = 'mio://web.vip.miui.com/page/info/mio/mio/checkIn';
+            window.location.href = url;
+        }
+        window.onload = function(){
+            document.getElementById('open_again').onclick = openMiCheckin;
+        }
+    </script>
+</html>
